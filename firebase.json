@@ -1,0 +1,28 @@
+{
+    "firebase": "ng2-play",
+    "public": "dist",
+    "ignore": [
+        "bower_components",
+        "node_modules",
+        "scripts",
+        "src",
+		"!lib/angular2/src",
+        "tools",
+        "**/.*",
+        "bower.json",
+        "firebase.json",
+        "gulpfile.js",
+        "package.json"
+    ],
+    "rewrites": [{
+        "source": "**",
+        "destination": "/index.html"
+    }],
+    "headers": [{
+        "source" : "**/*.@(js|html|css|map)",
+        "headers" : [{
+            "key" : "Cache-Control",
+            "value" : "max-age=3600"
+        }]
+    }]
+}
