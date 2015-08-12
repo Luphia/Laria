@@ -16,6 +16,8 @@ import { Instruction, OnActivate, OnDeactivate } from 'angular2/router';
 
 import { isNativeShadowDOMSupported } from 'common/shadow_dom';
 import { Icon } from '../icon/icon';
+import { Menu } from '../menu/menu';
+import { Board } from '../board/board';
 
 @Component({
 	selector: 'pannel'
@@ -33,7 +35,9 @@ import { Icon } from '../icon/icon';
 		NgControlName,
 		NgForm,
 		NgFormModel,
-		Icon
+		Icon,
+		Menu,
+		Board
 	]
 })
 

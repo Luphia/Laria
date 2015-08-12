@@ -1,0 +1,28 @@
+.user {
+	display: block;
+	background: rgb(190,233,255);
+	width: 130px;
+	height: 60px;
+}
+.user::after {
+	content: '';
+	border-left: 30px solid rgb(190,233,255);
+	border-right: 0px solid transparent;
+	border-top: 60px solid transparent;
+	border-bottom: 0px solid transparent;
+	position: absolute;
+	top: 0px;
+	left: 130px;
+}
+
+.user .container {
+	position: relative;
+}
+
+.user .photo img {
+	margin: 7px 10px;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	border: 3px solid rgba(255, 255, 255, .5);
+}

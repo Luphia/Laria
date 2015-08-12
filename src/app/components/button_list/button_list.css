@@ -1,0 +1,89 @@
+.button-list {
+	display: block;
+	background: rgb(190,233,255);
+	width: 160px;
+	height: 425px;
+}
+
+.button-list .container {
+	position: relative;
+}
+
+.button-list .container .button {
+	cursor: pointer;
+	display: block;
+	width: 160px;
+	height: 60px;
+	font-size: .8em;
+	color: rgb(160, 203, 234);
+	transition: all ease-in-out .2s;
+}
+.button-list .container .button::before {
+	content: '';
+	display: block;
+	background: transparent;
+	position: absolute;
+	top: 0px;
+	left: 155px;
+	width: 5px;
+	height: 60px;
+}
+.button-list .container .button::after {
+	content: '';
+	border-top: 60px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-left: 0px solid transparent;
+	border-right: 10px solid transparent;
+	position: absolute;
+	top: 0px;
+	left: 145px;
+}
+.button-list .container .button > .name {
+	line-height: 60px;
+	margin-left: 50px;
+}
+.button-list .container .button:hover {
+	background-color: rgb(127, 220, 255);
+	position: relative;
+	color: rgb(255, 255, 255);
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, .3);
+}
+.button-list .container .button:hover:before {
+	background: rgb(120, 211, 255);
+}
+.button-list .container .button:hover:after {
+	border-top: 60px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-left: 0px solid transparent;
+	border-right: 10px solid rgb(120, 211, 255);
+}
+
+.button-list .container .button > .icon {
+	width: 160px;
+	height: 60px;
+	position: absolute;
+}
+.button-list .container .button.dashboard > .icon {
+	background: url(../../../resources/menu-dashboard.png);
+}
+.button-list .container .button.dashboard:hover > .icon {
+	background: url(../../../resources/menu-dashboard-hover.png);
+}
+.button-list .container .button.devices > .icon {
+	background: url(../../../resources/menu-myDevices.png);
+}
+.button-list .container .button.devices:hover > .icon {
+	background: url(../../../resources/menu-myDevices-hover.png);
+}
+.button-list .container .button.preference > .icon {
+	background: url(../../../resources/menu-preferences.png);
+}
+.button-list .container .button.preference:hover > .icon {
+	background: url(../../../resources/menu-preferences-hover.png);
+}
+.button-list .container .button.about > .icon {
+	background: url(../../../resources/menu-about.png);
+}
+.button-list .container .button.about:hover > .icon {
+	background: url(../../../resources/menu-about-hover.png);
+}

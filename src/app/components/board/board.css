@@ -1,12 +1,12 @@
-.menu {
+.board {
 	position: absolute;
 	display: block;
-	left: 0px;
+	left: 160px;
 	top: 0px;
-	width: 160px;
-	height: 485px;
+	width: 620px;
+	height: 465px;
 }
 
-.menu .container {
+.board .container {
 	position: relative;
 }

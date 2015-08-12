@@ -16,18 +16,16 @@ import { Instruction, OnActivate, OnDeactivate } from 'angular2/router';
 
 import { isNativeShadowDOMSupported } from 'common/shadow_dom';
 import { Icon } from '../icon/icon';
-import { User } from '../user/user';
-import { ButtonList } from '../button_list/button_list';
 
 @Component({
-	selector: 'menu'
+	selector: 'user'
 })
 
 @View({
 	encapsulation: isNativeShadowDOMSupported ? ViewEncapsulation.NATIVE : ViewEncapsulation.EMULATED, // EMULATED (default), NATIVE, NONE
-	templateUrl: 'app/components/menu/menu.html',
+	templateUrl: 'app/components/user/user.html',
 	styleUrls: [
-		'app/components/menu/menu.css'
+		'app/components/user/user.css'
 	],
 	directives: [
 		NgIf,
@@ -35,13 +33,11 @@ import { ButtonList } from '../button_list/button_list';
 		NgControlName,
 		NgForm,
 		NgFormModel,
-		Icon,
-		User,
-		ButtonList
+		Icon
 	]
 })
 
-export class Menu {
+export class User {
 	form: ControlGroup;
 	constructor() {}
 }
