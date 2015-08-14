@@ -38,7 +38,10 @@ import { Icon } from '../icon/icon';
 })
 
 export class Dashboard {
-	form: ControlGroup;
+	user: String;
+  machine: String;
+  unit: String;
+  amount: Number;
 	constructor() {
     this.user = 'Luphia';
     this.machine = 'iMac';
