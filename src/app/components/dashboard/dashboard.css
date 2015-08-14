@@ -1,0 +1,65 @@
+.dashboard {
+
+}
+
+.dashboard .container {
+
+}
+
+.dashboard .container .info {
+  margin-left: 20px;
+  line-height: 52px;
+  border-bottom: 3px solid rgb(190,233,255);
+  width: 550px;
+}
+.dashboard .container .info .description {
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+.dashboard .container .info .description .edit {
+  display: none;
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin-right: 5px;
+  background: url(../../../resources/glyph-edit.png) center center no-repeat;
+}
+.dashboard .container .info .description:hover .edit {
+  display: inline-block;
+}
+
+.dashboard .container .info .earned {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding-right: 20px;
+}
+.dashboard .container .info .earned .amount {
+  float: left;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+.dashboard .container .info .earned .amount::before {
+  content: '$';
+}
+.dashboard .container .info .earned .unit {
+  float: left;
+  font-size: .7em;
+  font-weight: lighter;
+  margin-right: 10px;
+  line-height: 1.6em;
+  display: block;
+}
+.dashboard .container .info .earned .unit::after {
+  content: 'Earned';
+  display: block;
+}
+.dashboard .container .info .earned .question {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  right: 0px;
+  background: url(../../../resources/glyph-help.png) center center no-repeat;
+}

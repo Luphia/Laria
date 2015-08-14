@@ -27,8 +27,17 @@ interface IRoutes {
 
 let routes: IRoutes = [
 	{
-		component: Pannel,
 		path: '/',
+		redirectTo: '/pannel'
+	},
+	{
+		component: Pannel,
+		path: '/pannel',
+		as: 'pannel'
+	},
+	{
+		component: Pannel,
+		path: '/pannel/:page',
 		as: 'pannel'
 	}
 ];
@@ -51,7 +60,8 @@ let routes: IRoutes = [
 	directives: [
 		RouterOutlet,
 		RouterLink,
-		Logo
+		Logo,
+		Pannel
 	]
 })
 
@@ -70,7 +80,7 @@ export class App {
 			if (!that.loading) return;
 			setTimeout(
 				(_) => that.loading = false,
-				3000
+				1000
 			);
 		});
 

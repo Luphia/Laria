@@ -1,5 +1,5 @@
 import {
-	Inject,
+  Inject,
 	ViewEncapsulation,
 	Component,
 	View,
@@ -16,19 +16,16 @@ import { Instruction, OnActivate, OnDeactivate } from 'angular2/router';
 
 import { isNativeShadowDOMSupported } from 'common/shadow_dom';
 import { Icon } from '../icon/icon';
-import { Controllbar } from '../controllbar/controllbar';
-import { Menu } from '../menu/menu';
-import { Board } from '../board/board';
 
 @Component({
-	selector: 'pannel'
+	selector: 'controllbar'
 })
 
 @View({
 	encapsulation: isNativeShadowDOMSupported ? ViewEncapsulation.NATIVE : ViewEncapsulation.EMULATED, // EMULATED (default), NATIVE, NONE
-	templateUrl: 'app/components/pannel/pannel.html',
+	templateUrl: 'app/components/controllbar/controllbar.html',
 	styleUrls: [
-		'app/components/pannel/pannel.css'
+		'app/components/controllbar/controllbar.css'
 	],
 	directives: [
 		NgIf,
@@ -36,14 +33,11 @@ import { Board } from '../board/board';
 		NgControlName,
 		NgForm,
 		NgFormModel,
-		Icon,
-		Controllbar,
-		Menu,
-		Board
+		Icon
 	]
 })
 
-export class Pannel implements OnActivate, OnDeactivate {
+export class Controllbar {
 	form: ControlGroup;
 	constructor() {}
 }

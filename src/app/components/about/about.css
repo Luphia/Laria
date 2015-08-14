@@ -1,0 +1,32 @@
+.about {
+  width: 600px;
+  height: 425px;
+  background: url(../../../resources/about-header-biglogo.png) center 24px no-repeat;
+}
+.about .container {
+  position: relative;
+}
+
+.about .container a {
+  color: #f5a623;
+  text-decoration: underline;
+}
+
+.about .container .version {
+  position: absolute;
+  left: 50px;
+  top: 250px;
+}
+.about .container .version .ver {
+  font-size: 1.5em;
+}
+.about .container .version .des {
+  font-size: .8em;
+}
+
+.about .container .copyright {
+  font-size: .8em;
+  position: absolute;
+  left: 50px;
+  top: 330px;
+}
